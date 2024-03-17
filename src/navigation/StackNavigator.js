@@ -4,6 +4,11 @@ import { createStackNavigator } from '@react-navigation/stack'
 import HomeScreen from '../screens/HomeScreen'
 import CartScreen from '../screens/CartScreen'
 import AccountScreen from '../screens/AccountScreen'
+import DetailScreen from '../screens/DetailScreen'
+import ProductListScreen from '../screens/ProductListScreen'
+import OrderScreen from '../screens/OrderScreen'
+import ProfileScreen from '../screens/ProfileScreen'
+
 
 const Stack = createStackNavigator()
 
@@ -18,8 +23,12 @@ const MainStackNavigator = () => {
                 headerShown: false
             }}
         >
+             <Stack.Screen name='detailscreen' component={DetailScreen} />
             <Stack.Screen name='homescreen' component={HomeScreen} />
             <Stack.Screen name='accountscreen' component={AccountScreen} />
+            <Stack.Screen name='productlistscreen' component={ProductListScreen} />
+            <Stack.Screen name='orderscreen' component={DetailScreen} />
+
            
         </Stack.Navigator>
     )
