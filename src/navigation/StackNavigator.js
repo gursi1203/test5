@@ -6,6 +6,8 @@ import CartScreen from '../screens/CartScreen'
 import AccountScreen from '../screens/AccountScreen'
 import DetailScreen from '../screens/DetailScreen'
 import ProductListScreen from '../screens/ProductListScreen'
+import OrderScreen from '../screens/OrderScreen'
+
 const Stack = createStackNavigator()
 
 const MainStackNavigator = () => {
